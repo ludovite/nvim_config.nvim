@@ -1,4 +1,4 @@
--- [[ Setting options ]]
+--━━❰ Setting options ❱━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{{{0
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!,
 --  For more options, you can see `:help option-list`
@@ -12,7 +12,7 @@ local options = {
   conceallevel = 0, -- So that `` is visible in markdown files
   fileencoding = 'utf-8', -- The encoding written to a file
   hlsearch = true, -- Highlight all matches on previous search pattern
-  ignorecase = true, -- Ignore case in search patterns
+  ignorecase = true, -- Ignore case in command mode
   smartcase = true,
   smartindent = true, -- Make indenting smarter again
   incsearch = true,
@@ -28,7 +28,7 @@ local options = {
   number = true,
   -- relativenumber = true,
   numberwidth = 3, -- Set number column width to 3 {default 4}
-  signcolumn = 'no', -- Always show the sign column, otherwise it would shift the text each time
+  signcolumn = 'yes', -- Always show the sign column, otherwise it would shift the text each time
   breakindent = true, -- Enable break indent
   undofile = true, -- Save undo history
   updatetime = 250, -- Faster completion (4000ms default)
@@ -41,8 +41,7 @@ local options = {
   inccommand = 'split', -- Preview substitutions live, as you type!
   scrolloff = 999, -- Minimal number of screen lines to keep above and below the cursor
   sidescrolloff = 8,
-  writebackup = false, -- If a file is being edited by another program (or was written to file while editing
-  -- with another program), it is not allowed to be edited
+  writebackup = false, -- If a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
   expandtab = true, -- Convert tabs to spaces
   shiftwidth = 3, -- The number of spaces inserted for each indentation
   tabstop = 3, -- Insert 3 spaces for a tab
@@ -51,10 +50,14 @@ local options = {
   guifont = 'monospace:h17', -- the font used in graphical neovim applications
   titlestring = [[%F %h%m%r%w NVIM]],
   title = true, -- Print active filename in window titlebar
-}
+  virtualedit = 'block',
+  -- inccommand = 'split', -- Open a windows to show every subsitution in the entire buffer
+} --}}}0
 
+--━━❰ Activate these options ❱━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{{{1
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
+--}}}1
 
--- vim: ts=2 sts=2 sw=2 et foldmethod=marker foldlevel=0
+-- vim: ts=2 sts=2 sw=2 et fdm=marker fdl=0
