@@ -1,3 +1,12 @@
 Understanding Neovim
 https://www.youtube.com/playlist?list=PLx2ksyallYzW4WNYHD9xOFrPRYGlntAft
 ___________________________________________________________
+
+━━❰ Documentation ❱━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ <Ctrl-Shift mapping with modern terminal emulators, see
+ https://www.reddit.com/r/neovim/comments/vfqseq/enable_special_keyboard_combinations_in_alacritty/
+ https://en.wikipedia.org/wiki/List_of_Unicode_characters
+ http://www.leonerd.org.uk/hacks/fixterms/
+ https://sw.kovidgoyal.net/kitty/keyboard-protocol/
+ https://wezfurlong.org/wezterm/config/lua/keyassignment/SendString.html
+___________________________________________________________
