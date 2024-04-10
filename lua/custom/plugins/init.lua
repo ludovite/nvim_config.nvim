@@ -9,6 +9,8 @@ return {
   require 'custom/plugins/solarized', -- second colorscheme
   require 'custom/plugins/bufferline', -- display buffers name in tab display
   require 'custom/plugins/nvim-colorizer', -- colorize color names or #hexa
+  require 'custom/plugins/marks', -- Manage & display marks
+  -- require 'custom/plugins/nvim-surround', -- surround objects
   -- require 'custom/plugins/barbecue', -- make sure barbecue loads after your colorscheme
 }
 -- vim: ts=2 sts=2 sw=2 et fdm=marker fdl=0
