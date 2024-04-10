@@ -29,6 +29,7 @@ return {
         indent = {
           highlight = highlight,
           char = '▏', -- '⎸',
+          repeat_linebreak = true,
         },
       }
       vim.g.rainbow_delimiters = { highlight = highlight }
