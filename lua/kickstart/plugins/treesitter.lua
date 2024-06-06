@@ -26,6 +26,7 @@ return {
         enable = true,
         disable = {
           'ruby',
+          'python',
         },
       }, -- 1}}}
       incremental_selection = { -- {{{1
