@@ -53,7 +53,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- [[ Buffers & files ]]
 vim.keymap.set('n', '<A-;>', vim.cmd.bnext, { desc = 'Next buffer' })
 vim.keymap.set('n', '<A-,>', vim.cmd.bprevious, { desc = 'Previous buffer' })
-vim.keymap.set('n', '<A-w>', vim.cmd.bdelete, { desc = 'Close buffer' })
+vim.keymap.set('n', '<A-d>', vim.cmd.bdelete, { desc = 'Close buffer' })
 
 vim.keymap.set('n', '<C-s>', vim.cmd.update, { desc = 'Save file if needed' })
 vim.keymap.set('i', '<C-s>', function()
