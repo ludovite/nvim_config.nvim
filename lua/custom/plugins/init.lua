@@ -12,6 +12,7 @@ return {
   require 'custom/plugins/marks', -- Manage & display marks
   require 'custom/plugins/surround', -- surround objects
   require 'custom/plugins/nvim-ufo', -- modern look folding
+  require 'custom/plugins/jupyter-nvim', -- REPL to QtConsole
   -- require 'custom/plugins/molten-nvim', -- jupyter-like
   -- require 'custom/plugins/barbecue', -- make sure barbecue loads after your colorscheme
 }
